@@ -1,24 +1,28 @@
 package com.nuryadincjr.intent;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.nuryadincjr.intent.databinding.ActivityExpilistBinding;
 
 public class ExpilistActivity extends AppCompatActivity {
-    private TextView textView;
+
+    private ActivityExpilistBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_expilist);
 
-        textView = findViewById(R.id.textView);
+        binding = ActivityExpilistBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         Intent intent = getIntent();
         String txt = intent.getStringExtra("txt");
         if(txt != null) {
-            textView.setText(txt);
+            binding.textView.setText(txt);
         }
     }
 }
