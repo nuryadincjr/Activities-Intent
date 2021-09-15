@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnExplisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/klik_disini_untuk_explisit_intent" />
+
+    <Button
+        android:id="@+id/btnImplisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnExplisit"
+        android:layout_centerHorizontal="true"
+        android:text="@string/klik_disini_untuk_implisit_intent"
+        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/txtEkstra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnImplisit"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/masukan_text_ekstra"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        tools:ignore="TextContrastCheck"
+        android:layout_marginTop="24dp"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btnExtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intent_with_extra"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtEkstra"/>
+
+</RelativeLayout>

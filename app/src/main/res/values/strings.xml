@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Intent</string>
+    <string name="klik_disini_untuk_explisit_intent">Klik disini untuk explisit intent</string>
+    <string name="klik_disini_untuk_implisit_intent">Klik disini untuk implisit intent</string>
+    <string name="ini_adalah_halamn_ke_2">Ini adalah halamn Ke-2</string>
+    <string name="masukan_text_ekstra">Masukan text Ekstra</string>
+    <string name="intent_with_extra">Intent with Extra</string>
+</resources>
